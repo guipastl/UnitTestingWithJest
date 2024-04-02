@@ -10,8 +10,8 @@ it('se a lista estiver vazia, a comissão é zero', () => {
 it('calcula comissão quando só tem um item na lista', () => {
     const resultadoAtual = calculaComissaoDeVenda([{
         id: 'PROD-123',
-        preco: 1000,
-        quantidadeVEndida: 1
+        precoUnitario: 1000,
+        quantidadeVendida: 1
     }])
     const resultadoEsperado = 50
 
