@@ -2,9 +2,7 @@ module.exports = function(itens) {
     let foundSpecialProduct = false
     const totalPrice = itens.map(item => {
         const { id, precoUnitario, quantidadeVendida } = item
-        if (id === 'XP-0101') {
-            foundSpecialProduct = true
-        }
+        if (id === 'XP-0101') foundSpecialProduct = true
         return precoUnitario * quantidadeVendida
     }).reduce((a, b) => a + b, 0)
     if (foundSpecialProduct) return totalPrice * .2
